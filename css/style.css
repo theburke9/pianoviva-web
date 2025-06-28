@@ -82,6 +82,73 @@ header {
     }
 }
 
+/* === PRICING === */
+#pricing {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card {
+    padding: 1rem;
+    background-color: #E1F0F5;
+    text-align: center;
+    flex:1;
+}
+
+.card > * {
+    padding: 4px 0;
+}
+
+.card .card-title {
+    font-weight: bold;
+}
+
+.card .card-price {
+    font-weight: bold;
+}
+
+.card .card-info {
+    font-weight: 200;
+    font-size: 0.75em;
+}
+
+@media (min-width: 640px) {
+    #pricing {
+        max-width: 640px;
+        margin-top: 1rem;
+        gap: 10px;
+    }
+
+    .card {
+        border-radius: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    #pricing {
+        max-width: 768px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .card {
+        text-align: left;
+    }
+}
+
+@media (min-width: 1024px) {
+    #pricing {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1280px) {
+    #pricing {
+        max-width: 1140px;
+    }
+}
+
 /* === UTILS === */
 .px-sm {
     padding-left: 4px;
