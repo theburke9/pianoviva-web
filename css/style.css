@@ -28,7 +28,7 @@ body {
     }
 }
 
-/* === HEADER === */
+/* === HEADER AND MAP === */
 header {
     background-image: 
     linear-gradient(90deg, #E1F0F5 0%, #e1f0f5bb 100%),
@@ -41,27 +41,43 @@ header {
     margin: 0 auto;
 }
 
+#map {
+    width: 100%;
+    height: 360px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#map iframe {
+    width: 100%;
+    height: 100%;
+}
+
 @media (min-width: 640px) {
-    header {
+    #map {
+        margin-top: 1rem;
+    }
+
+    #map, header {
         max-width: 640px;
         border-radius: 16px;
     }
 }
 
 @media (min-width: 768px) {
-    header {
+    #map, header {
         max-width: 768px;
     }
 }
 
 @media (min-width: 1024px) {
-    header {
+    #map, header {
         max-width: 960px;
     }
 }
 
 @media (min-width: 1280px) {
-    header {
+    #map, header {
         max-width: 1140px;
     }
 }
