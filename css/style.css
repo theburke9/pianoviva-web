@@ -1,0 +1,114 @@
+/* === BASE === */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+@media (min-width: 640px) {
+    body {
+    padding: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+/* === HEADER === */
+header {
+    background-image: 
+    linear-gradient(90deg, #E1F0F5 0%, #e1f0f5bb 100%),
+        url('../images/arenes.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 3rem 1rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+    header {
+        max-width: 640px;
+        border-radius: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1280px) {
+    header {
+        max-width: 1140px;
+    }
+}
+
+/* === UTILS === */
+.px-sm {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.px-md {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.px-lg{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/* === HEADING === */
+h1 {
+    font-size: 2.5rem;
+    padding-bottom: 0.5rem; 
+}
+
+h2 {
+    font-size: 1.75rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+/* === ROUNDED === */
+.rounded-sm {
+    border-radius: 4px;
+}
+
+.rounded-md {
+    border-radius: 8px;
+}
+
+.rounded-lg {
+    border-radius: 16px;
+}
